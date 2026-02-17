@@ -915,7 +915,7 @@ private: // Spout SDK functions
 	// ---------------------------------------------------------
 	// Function: GetName
 	// Remove path and return the file name
-	std::string GetName(std::string fullpath);
+	std::string GetBaseName(std::string fullpath);
 
 	//
 	// Group: Timing utilities
@@ -1914,7 +1914,7 @@ std::string SPOUTImpl::GetPath(std::string fullpath)
 	return spoututils::GetPath(fullpath);
 }
 
-std::string SPOUTImpl::GetName(std::string fullpath)
+std::string SPOUTImpl::GetBaseName(std::string fullpath)
 {
 	return spoututils::GetName(fullpath);
 }

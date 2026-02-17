@@ -384,7 +384,7 @@ struct SPOUTLIBRARY
 	// Remove file name and return the path
 	virtual std::string GetPath(std::string fullpath) = 0;
 	// Remove path and return the file name
-	virtual std::string GetName(std::string fullpath) = 0;
+	virtual std::string GetBaseName(std::string fullpath) = 0;
 
 	//
 	// Timing utilities
